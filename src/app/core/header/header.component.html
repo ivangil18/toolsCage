@@ -1,14 +1,19 @@
-<header>
-  <div class="container">
-    <a href="#" class="logo">Cool App</a>
-    <nav>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <nav class="content">
+      <a
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        class="logo"
+        >toolCage</a
+      >
       <ul>
         <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/list">Tools</a></li>
         <!-- <li><a routerLink="/list">Loans</a></li>
-            <li><a routerLink="/list">Repair</a></li>
-            <li><a routerLink="/list">Installers</a></li> -->
+          <li><a routerLink="/list">Repair</a></li>
+          <li><a routerLink="/list">Installers</a></li> -->
       </ul>
     </nav>
-  </div>
-</header>
+  </mat-toolbar-row>
+</mat-toolbar>
